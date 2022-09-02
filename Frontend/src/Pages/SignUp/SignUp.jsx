@@ -9,21 +9,20 @@ export const SignUp = () => {
   return (
 
     <>
-    <Box
-      sx={{
-        width: 500,
-        maxWidth: '100%',
-      }}
-    >
-      <TextField fullWidth label="fullWidth" id="fullWidth" />
-    </Box>
 
-    <h1>prachi</h1>
 
-    <p>----------------------------------------------
-        ----------------------------------------------
-    `</p>
+      <Box
+        sx={{
+          width: 500,
+          maxWidth: '100%',
+        }}
+      >
+        <TextField fullWidth label="fullWidth" id="fullWidth" />
+      </Box>
 
-</>
+
+
+    </>
+
   );
 }

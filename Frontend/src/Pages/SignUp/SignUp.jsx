@@ -1,59 +1,29 @@
 
 
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
-export const SignUp = ()=>{
+export const SignUp = () => {
 
-   
+  return (
 
+    <>
+    <Box
+      sx={{
+        width: 500,
+        maxWidth: '100%',
+      }}
+    >
+      <TextField fullWidth label="fullWidth" id="fullWidth" />
+    </Box>
 
-    return(
+    <h1>prachi</h1>
 
+    <p>----------------------------------------------
+        ----------------------------------------------
+    `</p>
 
-        <div>
-            <Grid container spacing={2}>
-           <div>
-           <Grid item xs={8}>
-            <TextField
-                 id="outlined-name"
-                 label="Name"
-                 value={name}
-                 onChange={handleChange}
-                />
-            </Grid>
-           </div>
-            <div>
-            <Grid item xs={8}>
-            <TextField
-                 id="outlined-name"
-                 label="Name"
-                 value={name}
-                 onChange={handleChange}
-                />
-            </Grid>
-            </div>
-             <div>
-             <Grid item xs={8}>
-             <TextField
-                 id="outlined-name"
-                 label="Name"
-                 value={name}
-                 onChange={handleChange}
-                />
-             </Grid>
-             </div>
-             <div>
-             <Grid item xs={8}>
-             <TextField
-                 id="outlined-name"
-                 label="Name"
-                 value={name}
-                 onChange={handleChange}
-                />
-             </Grid>
-             </div>
-           </Grid>
-        </div>
-    )
-
+</>
+  );
 }
-

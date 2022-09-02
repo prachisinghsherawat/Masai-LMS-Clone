@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import "./Login.css"
 import SimpleReactValidator from 'simple-react-validator';
@@ -62,7 +61,7 @@ export const Login = () => {
         <div>
     
             <Button className='btn' variant="contained">LOG IN</Button>
-            
+
         </div>
 
     </div>

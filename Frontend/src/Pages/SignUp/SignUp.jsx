@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import "./Login.css"
+import "./SignUp.css"
 
 
 
@@ -12,9 +12,35 @@ export const SignUp = () => {
 
     <>
 
-    <div className="loginBox">
+    <div className="signBox">
 
-       <div>
+        <div>
+          <Box
+            sx={{
+               width: 500,
+               maxWidth: '100%',
+            }}
+          >
+            <label>Name</label>
+            <TextField fullWidth id="fullWidth" />
+
+          </Box>
+        </div>
+
+        <div>
+          <Box
+            sx={{
+               width: 500,
+               maxWidth: '100%',
+            }}
+          >
+            <label>Username</label>
+            <TextField fullWidth id="fullWidth" />
+
+          </Box>
+        </div>
+
+        <div>
           <Box
             sx={{
                width: 500,
@@ -25,52 +51,24 @@ export const SignUp = () => {
             <TextField fullWidth id="fullWidth" />
 
           </Box>
-       </div>
+        </div>
 
-       <div>
+        <div>
           <Box
             sx={{
                width: 500,
                maxWidth: '100%',
             }}
           >
-            <label>Email</label>
+            <label>Password</label>
             <TextField fullWidth id="fullWidth" />
 
           </Box>
-       </div>
-
-       <div>
-          <Box
-            sx={{
-               width: 500,
-               maxWidth: '100%',
-            }}
-          >
-            <label>Email</label>
-            <TextField fullWidth id="fullWidth" />
-
-          </Box>
-       </div>
-
-       <div>
-          <Box
-            sx={{
-               width: 500,
-               maxWidth: '100%',
-            }}
-          >
-            <label>Email</label>
-            <TextField fullWidth id="fullWidth" />
-
-          </Box>
-       </div>
-
-       
+        </div>   
 
         <div>
     
-          <Button className='btn' variant="contained">LOG IN</Button>
+          <Button className='btn' variant="contained">SIGN UP</Button>
             
         </div>
 

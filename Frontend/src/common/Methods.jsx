@@ -12,17 +12,20 @@ export const postApi = (baseUrl,paramDetails,payload) =>{
 
 }
 
+
 export const getApi = (baseUrl,paramDetails) =>{ 
 
     axios.get(baseUrl+paramDetails)
 
 }
 
+
 export const updateApi = (baseUrl,paramDetails,payload) =>{ 
 
     axios.patch(baseUrl+paramDetails,payload)
 
 }
+
 
 export const deleteApi = (baseUrl,paramDetails) =>{ 
 

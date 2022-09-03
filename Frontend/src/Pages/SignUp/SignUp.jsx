@@ -30,12 +30,12 @@ export const SignUp = () => {
     const {name , value} = e.target;
     setSignupData({...signupData , [name]:value })
   }
-  
+
 
   const HandleSubmit = () => {
 
     if(simpleValidator.current.allValid()){
-      console.log("yes")
+      
     }
     else{
       simpleValidator.current.showMessages()

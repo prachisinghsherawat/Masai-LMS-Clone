@@ -5,6 +5,8 @@ import Button from '@mui/material/Button';
 import SimpleReactValidator from 'simple-react-validator';
 import "./SignUp.css"
 import { useState } from 'react';
+import { auth } from '../../firebase';
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from 'firebase/auth';
 
 
 
@@ -35,7 +37,7 @@ export const SignUp = () => {
   const HandleSubmit = () => {
 
     if(simpleValidator.current.allValid()){
-      
+      createUserWithEmailAndPassword(auth,signupData.email , signupData.password).then((user)=> console.log(user) )
     }
     else{
       simpleValidator.current.showMessages()

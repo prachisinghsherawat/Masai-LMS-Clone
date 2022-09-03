@@ -32,7 +32,7 @@ export const Login = () => {
     const HandleSubmit = () => {
     
         if(simpleValidator.current.allValid()){
-          console.log("yes")
+         
         }
         else{
           simpleValidator.current.showMessages()

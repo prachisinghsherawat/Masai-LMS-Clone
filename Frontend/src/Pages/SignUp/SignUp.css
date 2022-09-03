@@ -1,7 +1,7 @@
 
 .signBox{
     width: 27%;
-    height: 540px;
+    height: 520px;
     margin: auto;
     margin-top: 5%;
     border-radius: 2%;
@@ -15,7 +15,7 @@ label{
 }
 
 .signBox>div{
-    margin-top: 5%;  
+    margin-top: 7%;  
 }
 
 div>.btn{
@@ -25,4 +25,14 @@ div>.btn{
     padding: 2.2% 5%;
     background-color: rgb(7, 7, 7);
     
+}
+
+#fullWidth{
+    height: 13px;
+}
+
+span{
+    font-size: 12px;
+    float: left;
+    color: rgb(236, 2, 2);
 }

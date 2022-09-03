@@ -5,24 +5,40 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import "./Login.css"
 import SimpleReactValidator from 'simple-react-validator';
+import { useState } from 'react';
 
 
 
 export const Login = () => {
   
-    // const simpleValidator = React.useRef(SimpleReactValidator());
-
-    
+    const simpleValidator = React.useRef(new SimpleReactValidator());
+  
     const [loginData,setLoginData] = React.useState({
+
         email:'',
         password:'' 
     })
 
-    const handleLoginCredentials = (e)=>{
-        const {name,value} = e.target;
-        setLoginData({...loginData , [name] : value})
-    }
+    const [,forceUpdate] = useState()
 
+
+
+    const HandleChange = (e) => {
+
+        const {name , value} = e.target;
+        setLoginData({...loginData , [name]:value })
+    }
+    
+    const HandleSubmit = () => {
+    
+        if(simpleValidator.current.allValid()){
+          console.log("yes")
+        }
+        else{
+          simpleValidator.current.showMessages()
+          forceUpdate(1)
+        }
+    }
 
 
 
@@ -40,7 +56,8 @@ export const Login = () => {
             }}
         >
             <label>Email</label>
-            <TextField fullWidth id="fullWidth" />
+            <TextField fullWidth id="fullWidth" name='email' onChange={HandleChange} />
+            <span>{simpleValidator.current.message("email" , loginData?.email , "required")}</span>
 
         </Box>
        </div>
@@ -53,14 +70,15 @@ export const Login = () => {
             }}
         >
             <label>Password</label>
-            <TextField fullWidth id="fullWidth" />
+            <TextField fullWidth id="fullWidth" name='password' onChange={HandleChange} />
+            <span>{simpleValidator.current.message("password" , loginData?.password , "required")}</span>
 
         </Box>
        </div>
 
         <div>
     
-            <Button className='btn' variant="contained">LOG IN</Button>
+            <Button onClick={HandleSubmit} className='btn' variant="contained">LOG IN</Button>
 
         </div>
 

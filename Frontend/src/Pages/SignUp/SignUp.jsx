@@ -30,6 +30,7 @@ export const SignUp = () => {
     const {name , value} = e.target;
     setSignupData({...signupData , [name]:value })
   }
+  
 
   const HandleSubmit = () => {
 

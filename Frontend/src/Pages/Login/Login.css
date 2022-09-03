@@ -32,3 +32,13 @@ div>.btn{
     background-color: rgb(7, 7, 7);
     
 }
+
+#fullWidth{
+    height: 13px;
+}
+
+span{
+    font-size: 12px;
+    float: left;
+    color: rgb(236, 2, 2);
+}
